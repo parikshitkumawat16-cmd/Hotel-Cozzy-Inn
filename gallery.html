@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOTEL COZZY INN - Photo Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/gallary.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-header">
+        <div class="mobile-nav-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.5 2 5 4 5 8c0 3 2 5 4 6v8h6v-8c2-1 4-3 4-6 0-4-3.5-6-7-6zm0 2c2.5 0 5 1.5 5 4 0 2-1.5 3.5-3 4.3V18h-4v-5.7c-1.5-.8-3-2.3-3-4.3 0-2.5 2.5-4 5-4z" />
+            </svg>
+          </div>
+          <span>HOTEL COZZY INN</span>
+        </div>
+        <button
+          class="mobile-nav-close"
+          id="mobileNavClose"
+          aria-label="Close menu">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <header class="header" id="header">
+      <div class="hdr-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.5 2 5 4 5 8c0 3 2 5 4 6v8h6v-8c2-1 4-3 4-6 0-4-3.5-6-7-6zm0 2c2.5 0 5 1.5 5 4 0 2-1.5 3.5-3 4.3V18h-4v-5.7c-1.5-.8-3-2.3-3-4.3 0-2.5 2.5-4 5-4z" />
+            </svg>
+          </div>
+          <span class="logo-text">HOTEL COZZY INN</span>
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div
+        class="hero-bg"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80&quot;);
+        "></div>
+      <div class="hero-content">
+        <h1>Photo Gallery</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span>/</span><span>Gallery</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="glr-section">
+      <div class="glr-wrap">
+        <div class="glr-header reveal">
+          <span>Visual Journey</span>
+          <h2>Explore Our Hotel</h2>
+          <p>
+            Take a visual tour through the comfortable spaces and amenities at HOTEL COZZY INN.
+          </p>
+        </div>
+
+        <div class="glr-filters reveal">
+          <button class="glr-filter-btn active" data-filter="all">All</button>
+          <button class="glr-filter-btn" data-filter="rooms">Rooms</button>
+          <button class="glr-filter-btn" data-filter="facilities">
+            Facilities
+          </button>
+          <button class="glr-filter-btn" data-filter="exterior">
+            Exterior
+          </button>
+          <button class="glr-filter-btn" data-filter="dining">Dining</button>
+        </div>
+
+        <div class="glr-grid" id="glrGrid">
+          <div
+            class="glr-item reveal"
+            data-category="exterior"
+            data-caption="Hotel Exterior at Sunset"
+            data-src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=900&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=900&q=80"
+              alt="Hotel Exterior at Sunset"
+              loading="lazy" />
+            <div class="glr-overlay">
+              <p class="glr-caption">Hotel Exterior at Sunset</p>
+              <span class="glr-tag">Exterior</span>
+            </div>
+            <div class="glr-zoom">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="glr-item reveal"
+            data-category="facilities"
+            data-caption="Infinity Pool with Desert Views"
+            data-src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=80"
+              alt="Infinity Pool"
+              loading="lazy" />
+            <div class="glr-overlay">
+              <p class="glr-caption">Infinity Pool with Desert Views</p>
+              <span class="glr-tag">Facilities</span>
+            </div>
+            <div class="glr-zoom">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="glr-item reveal"
+            data-category="exterior"
+            data-caption="Grand Lobby"
+            data-src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=80"
+              alt="Grand Lobby"
+              loading="lazy" />
+            <div class="glr-overlay">
+              <p class="glr-caption">Grand Lobby</p>
+              <span class="glr-tag">Exterior</span>
+            </div>
+            <div class="glr-zoom">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="glr-item reveal"
+            data-category="dining"
+            data-caption="Fine Dining Restaurant"
+            data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
+              alt="Fine Dining Restaurant"
+              loading="lazy" />
+            <div class="glr-overlay">
+              <p class="glr-caption">Fine Dining Restaurant</p>
+              <span class="glr-tag">Dining</span>
+            </div>
+            <div class="glr-zoom">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="glr-item reveal"
+            data-category="facilities"
+            data-caption="Luxury Spa Treatment Room"
+            data-src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=80"
+              alt="Luxury Spa"
+              loading="lazy" />
+            <div class="glr-overlay">
+              <p class="glr-caption">Luxury Spa Treatment Room</p>
+              <span class="glr-tag">Facilities</span>
+            </div>
+            <div class="glr-zoom">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="glr-item reveal"
+            data-category="exterior"
+            data-caption="Tropical Gardens"
+            data-src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&q=80"
+              alt="Tropical Gardens"
+              loading="lazy" />
+            <div class="glr-overlay">
+              <p class="glr-caption">Tropical Gardens</p>
+              <span class="glr-tag">Exterior</span>
+            </div>
+            <div class="glr-zoom">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="glr-item reveal"
+            data-category="rooms"
+            data-caption="Premium Suite"
+            data-src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&q=80"
+              alt="Premium Suite"
+              loading="lazy" />
+            <div class="glr-overlay">
+              <p class="glr-caption">Premium Suite</p>
+              <span class="glr-tag">Rooms</span>
+            </div>
+            <div class="glr-zoom">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glr-lightbox" id="glrLightbox">
+      <button class="glr-lb-close" id="glrLbClose">&#x2715;</button>
+      <button class="glr-lb-prev" id="glrLbPrev">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+        </svg>
+      </button>
+      <div class="glr-lb-inner">
+        <img id="glrLbImg" src alt />
+        <p class="glr-lb-caption" id="glrLbCaption"></p>
+      </div>
+      <button class="glr-lb-next" id="glrLbNext">
+        <svg viewBox="0 0 24 24">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+        </svg>
+      </button>
+    </div>
+
+    <section class="po-cta-section">
+      <div class="po-cta-inner">
+        <span class="po-cta-label">Experience It Yourself</span>
+        <h2 class="po-cta-title">Ready to Create Your Memories?</h2>
+        <p class="po-cta-text">
+          Book your stay today and experience the comfort of HOTEL COZZY INN
+          firsthand.
+        </p>
+        <a href="rooms.html" class="po-cta-btn">Book Your Stay</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.5 2 5 4 5 8c0 3 2 5 4 6v8h6v-8c2-1 4-3 4-6 0-4-3.5-6-7-6z" />
+              </svg>
+            </div>
+            <span class="logo-text">HOTEL COZZY INN</span>
+          </a>
+          <p>
+            Comfortable rooms, hygienic food, and modern facilities for travelers
+            in Chomu. Quality hospitality at affordable prices.
+          </p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                <path
+                  d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" /></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.43-.01-.64.96-.69 1.79-1.56 2.45-2.55z" /></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24">
+                <path
+                  d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z" /></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Free WiFi</a></li>
+            <li><a href="#">Room Service</a></li>
+            <li><a href="#">24/7 Reception</a></li>
+            <li><a href="#">Card & UPI Payment</a></li>
+            <li><a href="#">Local Information</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <div class="fc-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <p>Chomu Bypass, Near Bhojlawa Puliya,<br />Chomu, Rajasthan</p>
+          </div>
+          <div class="fc-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <p>+91 96942 25522</p>
+          </div>
+          <div class="fc-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+            <p>hotelcozzyin@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 HOTEL COZZY INN. All Rights Reserved.</p>
+        <div class="fb-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/919694225522"
+      class="wa-btn"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+
+    <button class="po-back-top" id="poBackTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+      </svg>
+    </button>
+
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileNav = document.getElementById("mobileNav");
+      const overlay = document.getElementById("menuOverlay");
+      const mobileNavClose = document.getElementById("mobileNavClose");
+
+      function openMenu() {
+        mobileNav.classList.add("open");
+        overlay.classList.add("show");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeMenu() {
+        mobileNav.classList.remove("open");
+        overlay.classList.remove("show");
+        document.body.style.overflow = "";
+      }
+
+      menuToggle.addEventListener("click", openMenu);
+      mobileNavClose.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu);
+      mobileNav
+        .querySelectorAll("a")
+        .forEach((a) => a.addEventListener("click", closeMenu));
+
+      const reveals = document.querySelectorAll(".reveal");
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, i) => {
+            if (e.isIntersecting) {
+              setTimeout(() => e.target.classList.add("visible"), i * 80);
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      reveals.forEach((r) => obs.observe(r));
+
+      const backTop = document.getElementById("poBackTop");
+      window.addEventListener("scroll", () =>
+        backTop.classList.toggle("po-visible", window.scrollY > 300),
+      );
+      backTop.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+
+      document.querySelectorAll(".glr-filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".glr-filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const f = btn.dataset.filter;
+          document.querySelectorAll(".glr-item").forEach((item) => {
+            item.classList.toggle(
+              "glr-hidden",
+              f !== "all" && item.dataset.category !== f,
+            );
+          });
+        });
+      });
+
+      const lb = document.getElementById("glrLightbox");
+      const lbImg = document.getElementById("glrLbImg");
+      const lbCap = document.getElementById("glrLbCaption");
+      let lbItems = [],
+        lbIdx = 0;
+
+      document.querySelectorAll(".glr-item").forEach((item) => {
+        item.addEventListener("click", () => {
+          lbItems = [
+            ...document.querySelectorAll(".glr-item:not(.glr-hidden)"),
+          ];
+          lbIdx = lbItems.indexOf(item);
+          lbImg.src = item.dataset.src;
+          lbCap.textContent = item.dataset.caption;
+          lb.classList.add("open");
+          document.body.style.overflow = "hidden";
+        });
+      });
+      const closeLb = () => {
+        lb.classList.remove("open");
+        document.body.style.overflow = "";
+      };
+      document.getElementById("glrLbClose").addEventListener("click", closeLb);
+      document.getElementById("glrLbPrev").addEventListener("click", () => {
+        lbIdx = (lbIdx - 1 + lbItems.length) % lbItems.length;
+        lbImg.src = lbItems[lbIdx].dataset.src;
+        lbCap.textContent = lbItems[lbIdx].dataset.caption;
+      });
+      document.getElementById("glrLbNext").addEventListener("click", () => {
+        lbIdx = (lbIdx + 1) % lbItems.length;
+        lbImg.src = lbItems[lbIdx].dataset.src;
+        lbCap.textContent = lbItems[lbIdx].dataset.caption;
+      });
+    </script>
+  </body>
+</html>

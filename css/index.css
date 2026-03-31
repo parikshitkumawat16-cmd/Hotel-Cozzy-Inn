@@ -1,0 +1,410 @@
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+.menu-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -120%;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+.mobile-nav.open {
+  right: 0;
+}
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 72px;
+  border-bottom: 1px solid rgba(44, 74, 53, 0.12);
+  flex-shrink: 0;
+}
+.mobile-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.mobile-nav-logo .mnl-icon {
+  width: 38px;
+  height: 38px;
+  background: #2d4a2d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mobile-nav-logo .mnl-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+.mobile-nav-logo .mnl-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1c2b20;
+  letter-spacing: 0.5px;
+}
+
+.mobile-nav-close {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+  flex-shrink: 0;
+}
+.mobile-nav-close svg {
+  width: 22px;
+  height: 22px;
+  fill: #1c2b20;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+.mobile-nav-links a {
+  display: block;
+  padding: 18px 40px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #2c3e2c;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44, 74, 53, 0.1);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.mobile-nav-links a:hover {
+  background: #f5f0e8;
+  color: #2d4a2d;
+}
+.mobile-nav-links a.active {
+  color: #2d4a2d;
+  font-weight: 700;
+  border-left: 4px solid #b8975a;
+  padding-left: 36px;
+}
+
+
+
+
+          .fac-section {
+            padding: 80px 24px;
+            background: #1a1209;
+          }
+          .fac-wrap {
+            max-width: 960px;
+            margin: 0 auto;
+          }
+          .fac-header {
+            text-align: center;
+            margin-bottom: 48px;
+          }
+          .fac-label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #b8975a;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 10px;
+          }
+          .fac-title {
+            font-size: 30px;
+            font-weight: 500;
+            color: #f0e4c8;
+            margin-bottom: 10px;
+            line-height: 1.25;
+          }
+          .fac-desc {
+            font-size: 15px;
+            color: #a89070;
+            max-width: 480px;
+            margin: 0 auto;
+            line-height: 1.6;
+          }
+          .fac-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            border: 2px solid rgba(184, 151, 90, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+          }
+          .fac-box {
+            background: #211a0e;
+            padding: 32px 28px;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s;
+            cursor: default;
+            border: 1px solid rgba(184, 151, 90, 0.1);
+          }
+          .fac-box:hover {
+            background: #2d2210;
+          }
+          .fac-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #b8975a,
+              transparent
+            );
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+          .fac-box:hover::before {
+            opacity: 1;
+          }
+          .fac-icon-wrap {
+            width: 44px;
+            height: 44px;
+            background: rgba(184, 151, 90, 0.1);
+            border: 1px solid rgba(184, 151, 90, 0.27);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+          }
+          .fac-icon-wrap svg {
+            width: 20px;
+            height: 20px;
+            fill: #b8975a;
+          }
+          .fac-box-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: #f0e4c8;
+            margin-bottom: 6px;
+          }
+          .fac-box-text {
+            font-size: 13px;
+            color: #7a6a50;
+            line-height: 1.6;
+          }
+          .fac-num {
+            position: absolute;
+            bottom: 20px;
+            right: 24px;
+            font-size: 36px;
+            font-weight: 700;
+            color: rgba(184, 151, 90, 0.06);
+            letter-spacing: -1px;
+            font-family: Georgia, serif;
+            pointer-events: none;
+          }
+          .testi-section {
+            padding: 80px 24px;
+            background: #f7f3ec;
+          }
+          .testi-wrap {
+            max-width: 960px;
+            margin: 0 auto;
+          }
+          .testi-header {
+            text-align: center;
+            margin-bottom: 48px;
+          }
+          .testi-label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #b8975a;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 10px;
+          }
+          .testi-title {
+            font-size: 30px;
+            font-weight: 500;
+            color: #1a1209;
+            margin-bottom: 10px;
+            line-height: 1.25;
+          }
+          .testi-desc {
+            font-size: 15px;
+            color: #7a6a50;
+            max-width: 480px;
+            margin: 0 auto;
+            line-height: 1.6;
+          }
+          .testi-slider {
+            position: relative;
+          }
+          .testi-slide {
+            display: none;
+          }
+          .testi-slide.testi-active {
+            display: block;
+          }
+          .testi-card {
+            background: #fff;
+            border: 1px solid #e8dcc8;
+            border-radius: 16px;
+            padding: 44px 48px;
+            max-width: 680px;
+            margin: 0 auto;
+            position: relative;
+          }
+          .testi-card::before {
+            content: "\201C";
+            position: absolute;
+            top: -18px;
+            left: 44px;
+            font-size: 80px;
+            font-family: Georgia, serif;
+            color: #b8975a;
+            line-height: 1;
+          }
+          .testi-stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 20px;
+          }
+          .testi-stars svg {
+            width: 16px;
+            height: 16px;
+            fill: #b8975a;
+          }
+          .testi-quote {
+            font-size: 16px;
+            color: #3a2e20;
+            line-height: 1.75;
+            font-style: italic;
+            margin-bottom: 28px;
+            font-family: Georgia, serif;
+          }
+          .testi-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding-top: 20px;
+            border-top: 1px solid #e8dcc8;
+          }
+          .testi-author img {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(184, 151, 90, 0.27);
+          }
+          .testi-author-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1a1209;
+            margin-bottom: 2px;
+          }
+          .testi-author-loc {
+            font-size: 12px;
+            color: #b8975a;
+            letter-spacing: 0.5px;
+            display: block;
+          }
+          .testi-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 36px;
+          }
+          .testi-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid #c8a96a;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+          }
+          .testi-btn:hover {
+            background: rgba(184, 151, 90, 0.1);
+          }
+          .testi-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: #b8975a;
+          }
+          .testi-dots {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+          }
+          .testi-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #d4c4a0;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            padding: 0;
+            display: inline-block;
+          }
+          .testi-dot.testi-dot-active {
+            background: #b8975a;
+            width: 24px;
+            border-radius: 4px;
+          }
+          @media (max-width: 640px) {
+            .fac-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+            .testi-card {
+              padding: 36px 24px;
+            }
+          }
+          @media (max-width: 400px) {
+            .fac-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+
+.gfi{
+  color: #c8a96a;
+}
+
+.nav-menu{
+  font-family: "Jost", sans-serif;
+}

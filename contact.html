@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL COZZY INN - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <style>
+           </style>
+</head>
+<body>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+        <a href="index.html" class="mobile-drawer-logo">
+            <div class="logo-badge"><i class="fas fa-leaf"></i></div>
+            <span>HOTEL COZZY INN</span>
+        </a>
+        <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="mobile-drawer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+    </div>
+</div>
+
+<nav id="navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-badge"><i class="fas fa-leaf"></i></span>
+        <span class="logo-name">HOTEL COZZY INN</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<section class="hero">
+    <div class="hero-pattern"></div>
+    <div class="hero-accent-left"><span></span><span></span><span></span></div>
+    <div class="hero-accent-right"><span></span><span></span><span></span></div>
+    <div class="hero-content">
+        <p class="hero-eyebrow">Get in Touch</p>
+        <h1>Contact <em>Us</em></h1>
+        <div class="hero-divider">
+            <span></span><i class="fas fa-spa"></i><span></span>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="contact-wrap">
+        <div class="reveal-left">
+            <div class="info-header">
+                <span class="eyebrow">Reach Out</span>
+                <h2 class="section-title">Always Here<br><em>to Assist You</em></h2>
+                <span class="gold-bar"></span>
+                <p class="section-desc">Our dedicated team is available around the clock for reservations, special requests, or any questions about your stay.</p>
+            </div>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="card-body"><h4>Our Address</h4><p>Chomu Bypass, Near Bhojlawa Puliya<br>Chomu, Rajasthan</p></div>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="card-body"><h4>Call Us</h4><p>Reservations: +91 96942 25522<br>Front Desk: +91 96942 25522</p></div>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="card-body"><h4>Email Us</h4><p>reservations@hotelcozzyin.com<br>info@hotelcozzyin.com</p></div>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon"><i class="fas fa-clock"></i></div>
+                    <div class="card-body"><h4>Hours</h4><p>Check-in: 2:00 PM &nbsp;·&nbsp; Check-out: 11:00 AM</p><span class="hours-badge"><i class="fas fa-circle"></i> Front Desk Open 24 / 7</span></div>
+                </div>
+            </div>
+            <div class="social-wrap">
+                <h4>Follow Our Journey</h4>
+                <div class="social-row">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="reveal-right">
+            <div class="form-card">
+                <div class="form-heading">
+                    <h2>Send <em>a Message</em></h2>
+                    <p class="sub">We'll respond within 24 hours · All fields marked * are required</p>
+                </div>
+                <div class="form-steps">
+                    <div class="step active" id="step1"><div class="step-dot">1</div><span>Your Details</span></div>
+                    <div class="step-line"></div>
+                    <div class="step" id="step2"><div class="step-dot">2</div><span>Stay Info</span></div>
+                    <div class="step-line"></div>
+                    <div class="step" id="step3"><div class="step-dot">3</div><span>Message</span></div>
+                </div>
+                <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - HOTEL COZZY INN">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <div class="form-row">
+                        <div class="form-group"><label for="firstName">First Name <span class="label-required">*</span></label><div class="input-wrap"><input type="text" id="firstName" name="firstName" placeholder="Rahul" required autocomplete="given-name"><i class="fas fa-user"></i></div></div>
+                        <div class="form-group"><label for="lastName">Last Name <span class="label-required">*</span></label><div class="input-wrap"><input type="text" id="lastName" name="lastName" placeholder="Sharma" required autocomplete="family-name"><i class="fas fa-user"></i></div></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label for="email">Email Address <span class="label-required">*</span></label><div class="input-wrap"><input type="email" id="email" name="email" placeholder="rahul@example.com" required autocomplete="email"><i class="fas fa-envelope"></i></div></div>
+                        <div class="form-group"><label for="phone">Phone Number</label><div class="input-wrap"><input type="tel" id="phone" name="phone" placeholder="+91 96942 25522" autocomplete="tel"><i class="fas fa-phone"></i></div></div>
+                    </div>
+                    <div class="form-group"><label for="subject">Enquiry Subject <span class="label-required">*</span></label><div class="input-wrap"><select id="subject" name="subject" required><option value="">— Select a subject —</option><option value="Room Reservation">Room Reservation</option><option value="General Inquiry">General Inquiry</option><option value="Special Request">Special Request</option><option value="Event / Wedding Booking">Event / Wedding Booking</option><option value="Spa & Dining">Spa &amp; Dining</option><option value="Feedback">Feedback</option><option value="Other">Other</option></select><i class="fas fa-tag"></i></div></div>
+                    <div class="form-group"><label for="guests">Number of Guests</label><div class="input-wrap"><select id="guests" name="guests"><option value="">— Select —</option><option value="1">1 Guest</option><option value="2">2 Guests</option><option value="3-4">3 – 4 Guests</option><option value="5+">5+ Guests</option></select><i class="fas fa-users"></i></div></div>
+                    <div class="dates-row">
+                        <div class="dates-row-label"><i class="fas fa-calendar-alt" style="color:var(--green-deep);font-size:11px;"></i> Preferred Stay Dates</div>
+                        <div class="dates-inner">
+                            <div class="form-group"><label for="checkIn">Check-in</label><div class="input-wrap"><input type="date" id="checkIn" name="Check-in Date"><i class="fas fa-calendar"></i></div></div>
+                            <div class="form-group"><label for="checkOut">Check-out</label><div class="input-wrap"><input type="date" id="checkOut" name="Check-out Date"><i class="fas fa-calendar-check"></i></div></div>
+                        </div>
+                    </div>
+                    <div class="form-group"><label for="message">Your Message <span class="label-required">*</span></label><div class="input-wrap textarea-wrap"><textarea id="message" name="message" required placeholder="Tell us about your requirements, special occasions, or any questions…"></textarea><i class="fas fa-comment-dots"></i></div></div>
+                    <div class="checkbox-wrap"><input type="checkbox" id="newsletter" name="Newsletter Opt-in" value="Yes"><label for="newsletter">Subscribe to our newsletter for exclusive offers &amp; seasonal packages</label></div>
+                    <button type="submit" class="btn-submit" id="submitBtn">
+                        <span class="btn-text"><i class="fas fa-paper-plane"></i>&nbsp; Send Your Message</span>
+                        <span class="btn-loader"><div class="spinner"></div></span>
+                    </button>
+                </form>
+                <div id="formSuccess" class="form-success">
+                    <div class="success-icon-wrap"><i class="fas fa-check"></i></div>
+                    <h3>Message Received!</h3>
+                    <p>Thank you for reaching out to  HOTEL COZZY INN<br>Our team will respond within 24 hours.</p>
+                    <span class="ref-number" id="refNumber">Reference: #CZY-000000</span><br>
+                    <button class="btn-reset" id="resetBtn"><i class="fas fa-redo"></i> Send Another Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="map-section">
+    <div class="map-header reveal">
+        <span class="eyebrow">Our Location</span>
+        <h2 class="section-title" style="color:var(--white);">Find <em>Us</em></h2>
+        <span class="gold-bar" style="margin:18px auto;"></span>
+        <p class="section-desc">Conveniently located in the heart of the Pink City — close to heritage sites, markets, and transport hubs.</p>
+    </div>
+    <div class="map-embed-wrap">
+        <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6!2d75.7873!3d26.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db40b5b2d6e7b%3A0x2a89e2b93f7d3b!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1700000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="HOTEL COZZY INN Location — Chomu"></iframe>
+    </div>
+</div>
+
+<section class="faq-section">
+    <div class="faq-header reveal">
+        <span class="eyebrow">Common Questions</span>
+        <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+        <span class="gold-bar" style="margin:18px auto;"></span>
+        <p class="section-desc">Quick answers to help you plan your perfect stay at HOTEL COZZY INN</p>
+    </div>
+    <div class="faq-grid">
+        <div class="faq-item"><div class="faq-q"><h3>What are the check-in and check-out times?</h3><div class="faq-toggle"><i class="fas fa-chevron-down"></i></div></div><div class="faq-a"><div class="faq-a-inner"><p>Check-in begins at 2:00 PM and check-out is by 11:00 AM. Early check-in and late check-out are available on request, subject to room availability.</p></div></div></div>
+        <div class="faq-item"><div class="faq-q"><h3>Is airport / railway station transfer available?</h3><div class="faq-toggle"><i class="fas fa-chevron-down"></i></div></div><div class="faq-a"><div class="faq-a-inner"><p>Yes, we offer complimentary transfers for Premium Suite guests. Other room categories can arrange transfers at an additional charge — please mention at booking.</p></div></div></div>
+        <div class="faq-item"><div class="faq-q"><h3>Do you have on-site dining?</h3><div class="faq-toggle"><i class="fas fa-chevron-down"></i></div></div><div class="faq-a"><div class="faq-a-inner"><p>Our in-house restaurant serves Rajasthani specialties and continental cuisine. A rooftop café with city views is open for breakfast and evening snacks. Room service is available 24/7.</p></div></div></div>
+        <div class="faq-item"><div class="faq-q"><h3>What is your cancellation policy?</h3><div class="faq-toggle"><i class="fas fa-chevron-down"></i></div></div><div class="faq-a"><div class="faq-a-inner"><p>Free cancellation up to 48 hours before check-in. Cancellations within 48 hours are charged one night's stay. Special promotional rates may have different terms.</p></div></div></div>
+        <div class="faq-item"><div class="faq-q"><h3>Do you host weddings and events?</h3><div class="faq-toggle"><i class="fas fa-chevron-down"></i></div></div><div class="faq-a"><div class="faq-a-inner"><p>Absolutely! We have dedicated banquet and lawn spaces for weddings, corporate events, and private celebrations. Contact us for customised packages and pricing.</p></div></div></div>
+        <div class="faq-item"><div class="faq-q"><h3>Is the spa and wellness centre open to all guests?</h3><div class="faq-toggle"><i class="fas fa-chevron-down"></i></div></div><div class="faq-a"><div class="faq-a-inner"><p>Yes, our award-winning spa is open to all hotel guests. Treatments include traditional Ayurvedic therapies, aromatherapy, and modern wellness sessions. Advance booking is recommended.</p></div></div></div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <a href="index.html" class="footer-logo-link"><div class="footer-logo-badge"><i class="fas fa-leaf"></i></div><span>HOTEL COZZY INN</span></a>
+            <p>Your perfect stay destination in Chomu combining comfort, cleanliness, and convenience.</p>
+            <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-tripadvisor"></i></a></div>
+        </div>
+        <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="rooms.html">Rooms &amp; Suites</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Amenities</h4><ul><li><a href="#">Free WiFi</a></li><li><a href="#">Full AC</a></li><li><a href="#">24/7 Reception</a></li><li><a href="#">Hygienic Food Service</a></li><li><a href="#">Payment Options</a></li></ul></div>
+        <div><h4>Contact Info</h4><div class="fc-item"><i class="fas fa-map-marker-alt"></i><span>Chomu Bypass, Near Bhojlawa Puliya, Chomu, Rajasthan</span></div><div class="fc-item"><i class="fas fa-phone-alt"></i><span>+91 96942 25522</span></div><div class="fc-item"><i class="fas fa-envelope"></i><span>hotelcozzyin@gmail.com</span></div></div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2024 HOTEL COZZY INN All Rights Reserved.</span>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div>
+    </div>
+</footer>
+
+<a href="https://wa.me/919694225522" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+    const hamburger         = document.getElementById('hamburger');
+    const mobileDrawer      = document.getElementById('mobileDrawer');
+    const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+    const menuOverlay       = document.getElementById('menuOverlay');
+
+    function openDrawer() {
+        mobileDrawer.classList.add('open');
+        menuOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+        mobileDrawer.classList.remove('open');
+        menuOverlay.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openDrawer);
+    mobileDrawerClose.addEventListener('click', closeDrawer);
+    menuOverlay.addEventListener('click', closeDrawer);
+    mobileDrawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+
+    const navbar = document.getElementById('navbar');
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 50);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    document.querySelectorAll('.faq-q').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.faq-item');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        });
+    });
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => {
+            if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); revealObs.unobserve(e.target); }
+        });
+    }, { threshold: 0.05 });
+    revealEls.forEach(el => { el.classList.add('animate-start'); revealObs.observe(el); });
+
+    const form       = document.getElementById('contactForm');
+    const successDiv = document.getElementById('formSuccess');
+    const submitBtn  = document.getElementById('submitBtn');
+    const resetBtn   = document.getElementById('resetBtn');
+    const refNumber  = document.getElementById('refNumber');
+    const steps      = document.querySelectorAll('.step');
+
+    function genRef() { return 'CZY-' + Math.floor(100000 + Math.random() * 900000); }
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+        steps.forEach((s, i) => { s.classList.remove('active', 'done'); setTimeout(() => s.classList.add(i < steps.length - 1 ? 'done' : 'active'), i * 200); });
+        try {
+            await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        } catch (err) {}
+        refNumber.textContent = 'Reference: #' + genRef();
+        form.style.display = 'none';
+        successDiv.style.display = 'block';
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+    });
+
+    resetBtn.addEventListener('click', () => {
+        form.reset(); form.style.display = 'block'; successDiv.style.display = 'none';
+        steps.forEach((s, i) => { s.classList.remove('done', 'active'); if (i === 0) s.classList.add('active'); });
+    });
+
+    const checkIn  = document.getElementById('checkIn');
+    const checkOut = document.getElementById('checkOut');
+    const today    = new Date().toISOString().split('T')[0];
+    checkIn.setAttribute('min', today);
+    checkIn.addEventListener('change', () => {
+        checkOut.setAttribute('min', checkIn.value);
+        if (checkOut.value && checkOut.value < checkIn.value) checkOut.value = '';
+    });
+</script>
+</body>
+</html>
