@@ -193,13 +193,14 @@ nav.scrolled .nav-links a.active {
     opacity 0.25s ease,
     background 0.3s;
 }
-nav.scrolled .hamburger {
+/* nav.scrolled .hamburger {
   background: var(--green-pale);
   border-color: var(--cream-border);
 }
+  */
 nav.scrolled .hamburger span {
   background: var(--green-deep);
-}
+} 
 
 .menu-overlay {
   position: fixed;

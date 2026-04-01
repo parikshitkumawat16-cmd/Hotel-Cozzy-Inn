@@ -971,3 +971,8 @@ footer ul a:hover {
   fill: #d4b48a;
   margin-top: 4px;
 }
+
+.footer-bottom-links a{
+  color: white;
+  margin: 0 10px;
+}

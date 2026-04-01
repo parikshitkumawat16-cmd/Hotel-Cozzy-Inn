@@ -1604,7 +1604,7 @@ footer ul a:hover {
 
 @media (max-width: 768px) {
   .header {
-    padding: 0 16px;
+    padding: 0 26px 0 26px;
   }
   .desktop-nav {
     display: none !important;
@@ -1730,6 +1730,12 @@ footer ul a:hover {
   }
 }
 
+@media (max-width: 515px) {
+  .header {
+    padding: 0 26px 0 16px;
+  }
+}
+
 @media (max-width: 400px) {
   .logo-name {
     display: none;
@@ -1767,4 +1773,15 @@ footer ul a:hover {
 .wa-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+}
+
+.logo{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text{
+  color: rgb(221, 215, 215);
 }

@@ -1,40 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="Explore our comfortable rooms at HOTEL COZZY INN.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our comfortable rooms at HOTEL COZZY INN."
+    />
     <title>HOTEL COZZY INN - Rooms</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/rooms2.css" />
     <style>
-    
-  </style>
+
+      .footer-social a :hover{
+        color: blanchedalmond;
+      }
+
+      .footer-bottom-links a{
+        text-decoration: none;
+        color: rgb(219, 215, 215);
+        padding: 0 25px !important;
+      }
+    </style>
   </head>
   <body>
-
     <div class="menu-overlay" id="menuOverlay"></div>
 
     <div class="mobile-nav" id="mobileNav">
       <div class="mobile-nav-header">
         <a href="index.html" class="mobile-nav-logo">
-          <div class="logo-icon">
+          <!-- <div class="logo-icon">
             <svg viewBox="0 0 24 24"><path
                 d="M12 2C8.5 2 5 4 5 8c0 3 2 5 4 6v8h6v-8c2-1 4-3 4-6 0-4-3.5-6-7-6z" /></svg>
           </div>
-          <span>HOTEL COZZY INN</span>
+          <span>HOTEL COZZY INN</span> -->
+          <img
+            src="public/finalLogo2.png"
+            alt="Logo"
+            width="100px"
+            style="margin-bottom: 10px"
+          />
         </a>
-        <button class="mobile-nav-close" id="mobileNavClose"
-          aria-label="Close menu">
-          <svg viewBox="0 0 24 24"><path
-              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
+        <button
+          class="mobile-nav-close"
+          id="mobileNavClose"
+          aria-label="Close menu"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
         </button>
       </div>
       <div class="mobile-nav-links">
@@ -48,9 +73,10 @@
 
     <header class="header">
       <a href="index.html" class="logo">
-        <div class="logo-icon"><svg viewBox="0 0 24 24"><path
+        <!-- <div class="logo-icon"><svg viewBox="0 0 24 24"><path
               d="M12 2C8.5 2 5 4 5 8c0 3 2 5 4 6v8h6v-8c2-1 4-3 4-6 0-4-3.5-6-7-6z" /></svg></div>
-        <span class="logo-text">HOTEL COZZY INN</span>
+        <span class="logo-text">HOTEL COZZY INN</span> -->
+        <img src="public/finalLogo2.png" width="90" height="35px" />
       </a>
       <nav>
         <a href="index.html">Home</a>
@@ -79,46 +105,79 @@
 
     <div class="section-intro">
       <div class="eyebrow">Comfortable & Well-Equipped Rooms</div>
-      <h2>Our rooms are thoughtfully designed to provide maximum comfort with all essential amenities. <em>Maximum Comfort</em></h2>
-      <p>Browse our selection of room types offering the best value for your stay in Chomu.</p>
+      <h2>
+        Our rooms are thoughtfully designed to provide maximum comfort with all
+        essential amenities. <em>Maximum Comfort</em>
+      </h2>
+      <p>
+        Browse our selection of room types offering the best value for your stay
+        in Chomu.
+      </p>
     </div>
 
     <section class="rooms-section">
       <div class="rooms-grid">
-
         <article class="room-card" id="r1">
           <div class="room-image">
             <img
               src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80"
-              alt="Deluxe Room" loading="lazy">
+              alt="Deluxe Room"
+              loading="lazy"
+            />
             <div class="room-badge">Most Popular</div>
           </div>
           <div class="room-content">
             <div class="room-number">01</div>
             <div class="room-tag">Entry Luxury</div>
             <h3 class="room-title">Deluxe Room</h3>
-            <p class="room-desc">A comfortable room with elegant furnishings,
-              modern amenities, and warm tones. Spacious and well-appointed for a
-              pleasant stay at HOTEL COZZY INN.</p>
+            <p class="room-desc">
+              A comfortable room with elegant furnishings, modern amenities, and
+              warm tones. Spacious and well-appointed for a pleasant stay at
+              HOTEL COZZY INN.
+            </p>
             <div class="amenities">
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" /></svg>King
-                Size Bed</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" /></svg>Free
-                WiFi</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z" /></svg>Climate
-                Control</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z" /></svg>Smart
-                TV</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5z" /></svg>Mini
-                Bar</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" /></svg>Room
-                Service</span>
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"
+                  /></svg
+                >King Size Bed</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"
+                  /></svg
+                >Free WiFi</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"
+                  /></svg
+                >Climate Control</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"
+                  /></svg
+                >Smart TV</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5z"
+                  /></svg
+                >Mini Bar</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"
+                  /></svg
+                >Room Service</span
+              >
             </div>
             <div class="price-row">
               <div class="room-price">
@@ -126,9 +185,13 @@
                 <span class="price-amount">$250</span>
                 <span class="price-unit">/ night</span>
               </div>
-              <a href="contact.html" class="btn-book">Reserve <svg
-                  viewBox="0 0 24 24"><path
-                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" /></svg></a>
+              <a href="contact.html" class="btn-book"
+                >Reserve
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                  /></svg
+              ></a>
             </div>
           </div>
         </article>
@@ -137,34 +200,60 @@
           <div class="room-image">
             <img
               src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=900&q=80"
-              alt="Super Deluxe Room" loading="lazy">
+              alt="Super Deluxe Room"
+              loading="lazy"
+            />
             <div class="room-badge">Best Value</div>
           </div>
           <div class="room-content">
             <div class="room-number">02</div>
             <div class="room-tag">Comfort Plus</div>
             <h3 class="room-title">Family Room</h3>
-            <p class="room-desc">Perfect for families and group stays with
-              spacious interiors. Multiple beds, full AC, comfortable seating area
-              and all essential amenities for a pleasant family vacation.</p>
+            <p class="room-desc">
+              Perfect for families and group stays with spacious interiors.
+              Multiple beds, full AC, comfortable seating area and all essential
+              amenities for a pleasant family vacation.
+            </p>
             <div class="amenities">
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" /></svg>King
-                Size Bed</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M19 19V4h-4V3H5v16H3v2h12V6h2v15h4v-2h-2zm-6 0H7V5h6v14z" /></svg>Private
-                Balcony</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" /></svg>Free
-                WiFi</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z" /></svg>Climate
-                Control</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" /></svg>24/7
-                Room Service</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M8 5v14l11-7z" /></svg>Entertainment System</span>
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"
+                  /></svg
+                >King Size Bed</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 19V4h-4V3H5v16H3v2h12V6h2v15h4v-2h-2zm-6 0H7V5h6v14z"
+                  /></svg
+                >Private Balcony</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"
+                  /></svg
+                >Free WiFi</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"
+                  /></svg
+                >Climate Control</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  /></svg
+                >24/7 Room Service</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg
+                >Entertainment System</span
+              >
             </div>
             <div class="price-row">
               <div class="room-price">
@@ -172,9 +261,13 @@
                 <span class="price-amount">$350</span>
                 <span class="price-unit">/ night</span>
               </div>
-              <a href="contact.html" class="btn-book">Reserve <svg
-                  viewBox="0 0 24 24"><path
-                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" /></svg></a>
+              <a href="contact.html" class="btn-book"
+                >Reserve
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                  /></svg
+              ></a>
             </div>
           </div>
         </article>
@@ -183,35 +276,63 @@
           <div class="room-image">
             <img
               src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80"
-              alt="Family Suite" loading="lazy">
+              alt="Family Suite"
+              loading="lazy"
+            />
             <div class="room-badge">Family Favorite</div>
           </div>
           <div class="room-content">
             <div class="room-number">03</div>
             <div class="room-tag">Spacious Comfort</div>
             <h3 class="room-title">Family Suite</h3>
-            <p class="room-desc">Thoughtfully designed for families with
-              multiple beds, spacious layout, and comfortable amenities ensuring
-              all family members enjoy a pleasant and relaxing stay.</p>
+            <p class="room-desc">
+              Thoughtfully designed for families with multiple beds, spacious
+              layout, and comfortable amenities ensuring all family members
+              enjoy a pleasant and relaxing stay.
+            </p>
             <div class="amenities">
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" /></svg>2
-                Queen Beds</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z" /></svg>Living
-                Room</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" /></svg>Free
-                WiFi</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" /></svg>Kids
-                Welcome Pack</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" /></svg>Kids
-                Menu</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M19 19V4h-4V3H5v16H3v2h12V6h2v15h4v-2h-2zm-6 0H7V5h6v14z" /></svg>Connecting
-                Rooms</span>
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"
+                  /></svg
+                >2 Queen Beds</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"
+                  /></svg
+                >Living Room</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"
+                  /></svg
+                >Free WiFi</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  /></svg
+                >Kids Welcome Pack</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"
+                  /></svg
+                >Kids Menu</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 19V4h-4V3H5v16H3v2h12V6h2v15h4v-2h-2zm-6 0H7V5h6v14z"
+                  /></svg
+                >Connecting Rooms</span
+              >
             </div>
             <div class="price-row">
               <div class="room-price">
@@ -219,9 +340,13 @@
                 <span class="price-amount">$450</span>
                 <span class="price-unit">/ night</span>
               </div>
-              <a href="contact.html" class="btn-book">Reserve <svg
-                  viewBox="0 0 24 24"><path
-                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" /></svg></a>
+              <a href="contact.html" class="btn-book"
+                >Reserve
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                  /></svg
+              ></a>
             </div>
           </div>
         </article>
@@ -230,35 +355,63 @@
           <div class="room-image">
             <img
               src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80"
-              alt="Premium Suite" loading="lazy">
+              alt="Premium Suite"
+              loading="lazy"
+            />
             <div class="room-badge">Signature Suite</div>
           </div>
           <div class="room-content">
             <div class="room-number">04</div>
             <div class="room-tag">Premium Comfort</div>
             <h3 class="room-title">Deluxe Suite</h3>
-            <p class="room-desc">Our premium accommodation with upgraded
-              furnishings, spacious layout, and enhanced amenities for guests
-              seeking extra comfort and convenience during their stay.</p>
+            <p class="room-desc">
+              Our premium accommodation with upgraded furnishings, spacious
+              layout, and enhanced amenities for guests seeking extra comfort
+              and convenience during their stay.
+            </p>
             <div class="amenities">
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" /></svg>California
-                King</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" /></svg>Personal
-                Butler</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M19 19V4h-4V3H5v16H3v2h12V6h2v15h4v-2h-2zm-6 0H7V5h6v14z" /></svg>Private
-                Terrace</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" /></svg>Private
-                Dining</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" /></svg>Plunge
-                Pool</span>
-              <span class="amenity"><svg viewBox="0 0 24 24"><path
-                    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z" /></svg>Airport
-                Transfer</span>
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"
+                  /></svg
+                >California King</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  /></svg
+                >Personal Butler</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 19V4h-4V3H5v16H3v2h12V6h2v15h4v-2h-2zm-6 0H7V5h6v14z"
+                  /></svg
+                >Private Terrace</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"
+                  /></svg
+                >Private Dining</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"
+                  /></svg
+                >Plunge Pool</span
+              >
+              <span class="amenity"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"
+                  /></svg
+                >Airport Transfer</span
+              >
             </div>
             <div class="price-row">
               <div class="room-price">
@@ -266,13 +419,16 @@
                 <span class="price-amount">$650</span>
                 <span class="price-unit">/ night</span>
               </div>
-              <a href="contact.html" class="btn-book">Reserve <svg
-                  viewBox="0 0 24 24"><path
-                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" /></svg></a>
+              <a href="contact.html" class="btn-book"
+                >Reserve
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                  /></svg
+              ></a>
             </div>
           </div>
         </article>
-
       </div>
     </section>
 
@@ -281,8 +437,10 @@
       <div class="cta-inner">
         <div class="cta-eyebrow">Exclusive Offers</div>
         <h2>Book Direct for Our Best Rates</h2>
-        <p>Contact us directly to unlock exclusive packages, complimentary
-          upgrades, and personalized experiences crafted just for you.</p>
+        <p>
+          Contact us directly to unlock exclusive packages, complimentary
+          upgrades, and personalized experiences crafted just for you.
+        </p>
         <div class="cta-btns">
           <a href="contact.html" class="btn-primary">Contact Us</a>
           <a href="tel:+15551234567" class="btn-outline">+1 (555) 123-4567</a>
@@ -291,117 +449,153 @@
     </section>
 
     <footer>
-    <div class="footer-grid">
-      <div>
-        <a href="index.html" class="logo">
-          <div class="logo-icon" style="margin-bottom: 10px;">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <!-- <div class="logo-icon" style="margin-bottom: 10px;">
             <svg viewBox="0 0 24 24">
               <path
                 d="M12 2C8.5 2 5 4 5 8c0 3 2 5 4 6v8h6v-8c2-1 4-3 4-6 0-4-3.5-6-7-6zm0 2c2.5 0 5 1.5 5 4 0 2-1.5 3.5-3 4.3V18h-4v-5.7c-1.5-.8-3-2.3-3-4.3 0-2.5 2.5-4 5-4z" />
             </svg>
           </div>
-          <span class="logo-text">HOTEL COZZY INN</span>
-        </a>
-        <p>
-          Comfortable rooms, hygienic food, and modern facilities for travelers
-          — where affordability meets quality hospitality in Chomu.
-        </p>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/profile.php?id=61580657097364"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/hotelcozzyinn_/?hl=en"><i class="fab fa-instagram"></i></a>
-          <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-          <a href="https://www.youtube.com/@hotelcozzyin"><i class="fab fa-youtube"></i></a>
+          <span class="logo-text">HOTEL COZZY INN</span> -->
+            <img
+              src="public/finalLogo2.png"
+              alt="Logo"
+              width="100px"
+              style="margin-bottom: 10px"
+            />
+          </a>
+          <p>
+            Comfortable rooms, hygienic food, and modern facilities for
+            travelers — where affordability meets quality hospitality in Chomu.
+          </p>
+          <div class="footer-social" style="margin-top: 10px;">
+            <a href="https://www.facebook.com/profile.php?id=61580657097364" target="_blank" style="color: rgb(180, 175, 175); padding: 4px;"
+              ><i class="fab fa-facebook" class="s-icon"></i
+            ></a>
+            <a href="https://www.instagram.com/hotelcozzyinn_/?hl=en" target="_blank" style="color: rgb(180, 175, 175); padding: 4px;"
+              ><i class="fab fa-instagram" class="s-icon"></i
+            ></a>
+            <a href="https://www.youtube.com/@hotelcozzyin" target="_blank" style="color: rgb(180, 175, 175); padding: 4px;"
+              ><i class="fab fa-youtube" class="s-icon"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Amenities</h4>
+          <ul>
+            <li><a href="about.html">Free WiFi</a></li>
+            <li><a href="about.html">Full AC</a></li>
+            <li><a href="about.html">24/7 Reception</a></li>
+            <li><a href="about.html">Hygienic Food Service</a></li>
+            <li><a href="about.html">Card & UPI Payment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <div class="fc-item">
+            <i class="fas fa-map-marker-alt" id="gfi"></i
+            ><span>Chomu Bypass, Near Bhojlawa Puliya, Chomu, Rajasthan</span>
+          </div>
+          <div class="fc-item">
+            <i class="fas fa-phone-alt"></i><span>+91 96942 25522</span>
+          </div>
+          <div class="fc-item">
+            <i class="fas fa-envelope"></i><span>hotelcozzyin@gmail.com</span>
+          </div>
         </div>
       </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Amenities</h4>
-        <ul>
-          <li><a href="about.html">Free WiFi</a></li>
-          <li><a href="about.html">Full AC</a></li>
-          <li><a href="about.html">24/7 Reception</a></li>
-          <li><a href="about.html">Hygienic Food Service</a></li>
-          <li><a href="about.html">Card & UPI Payment</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact Info</h4>
-        <div class="fc-item">
-          <i class="fas fa-map-marker-alt" id="gfi"></i><span>Chomu Bypass, Near Bhojlawa Puliya,
-            Chomu, Rajasthan</span>
-        </div>
-        <div class="fc-item">
-          <i class="fas fa-phone-alt"></i><span>+91 96942 25522</span>
-        </div>
-        <div class="fc-item">
-          <i class="fas fa-envelope"></i><span>hotelcozzyin@gmail.com</span>
+      <div class="footer-bottom">
+        <span>&copy; 2024 HOTEL COZZY INN All Rights Reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy">Privacy Policy</a><a href="terms-of-service">Terms of Service</a
+          ><a href="cookie-policy">Cookie Policy</a>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2024 HOTEL COZZY INN All Rights Reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-    <a href="https://wa.me/15551234567" class="whatsapp" target="_blank"
-      rel="noopener" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24"><path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+    <a
+      href="https://wa.me/919694225522"
+      class="whatsapp"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
     </a>
 
-    <button class="back-top" id="backTop" aria-label="Back to top"
-      onclick="window.scrollTo({top:0,behavior:'smooth'})">
-      <svg viewBox="0 0 24 24"><path
-          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" /></svg>
+    <button
+      class="back-top"
+      id="backTop"
+      aria-label="Back to top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <svg viewBox="0 0 24 24">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+      </svg>
     </button>
 
     <script>
-    const hamburger     = document.getElementById('hamburger');
-    const mobileNav     = document.getElementById('mobileNav');
-    const overlay       = document.getElementById('menuOverlay');
-    const mobileNavClose = document.getElementById('mobileNavClose');
+      const hamburger = document.getElementById("hamburger");
+      const mobileNav = document.getElementById("mobileNav");
+      const overlay = document.getElementById("menuOverlay");
+      const mobileNavClose = document.getElementById("mobileNavClose");
 
-    function openMenu() {
-      mobileNav.classList.add('open');
-      overlay.classList.add('show');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeMenu() {
-      mobileNav.classList.remove('open');
-      overlay.classList.remove('show');
-      document.body.style.overflow = 'auto';
-    }
+      function openMenu() {
+        mobileNav.classList.add("open");
+        overlay.classList.add("show");
+        document.body.style.overflow = "hidden";
+      }
+      function closeMenu() {
+        mobileNav.classList.remove("open");
+        overlay.classList.remove("show");
+        document.body.style.overflow = "auto";
+      }
 
-    hamburger.addEventListener('click', openMenu);
-    mobileNavClose.addEventListener('click', closeMenu);
-    overlay.addEventListener('click', closeMenu);
-    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+      hamburger.addEventListener("click", openMenu);
+      mobileNavClose.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu);
+      mobileNav
+        .querySelectorAll("a")
+        .forEach((a) => a.addEventListener("click", closeMenu));
 
-    window.addEventListener('scroll', () => {
-      document.getElementById('backTop').classList.toggle('visible', window.scrollY > 400);
-    }, { passive: true });
+      window.addEventListener(
+        "scroll",
+        () => {
+          document
+            .getElementById("backTop")
+            .classList.toggle("visible", window.scrollY > 400);
+        },
+        { passive: true },
+      );
 
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 100);
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.room-card').forEach(el => obs.observe(el));
-  </script>
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, i) => {
+            if (e.isIntersecting) {
+              setTimeout(() => e.target.classList.add("visible"), i * 100);
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".room-card").forEach((el) => obs.observe(el));
+    </script>
   </body>
 </html>

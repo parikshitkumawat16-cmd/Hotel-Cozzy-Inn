@@ -464,7 +464,7 @@ ul {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 40px;
+  bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -2172,9 +2172,9 @@ body {
     height: 44px;
   }
 
-  .scroll-indicator {
+  /* .scroll-indicator {
     bottom: 60px;
-  }
+  } */
 }
 
 footer {

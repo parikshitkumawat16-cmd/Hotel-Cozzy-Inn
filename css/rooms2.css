@@ -965,3 +965,8 @@ footer ul a:hover {
 .fIcon i {
   color: #dfaf78;
 }
+
+.s-icon{
+  color: white !important;
+  padding: 20px;
+}
